@@ -23,9 +23,17 @@ but in this case it's represented as the category of the number of
 rings, I think KNN did a better job at fitting throughout the whole
 spectrum. If I had wanted to try to regularize the model, it's possible
 that I could have gotten better value of the Naive Bayes, but as it was,
-I got "ok" values:
+I got "ok" values. What follows is a heatmap of the confusion matrix.
 
 KNN:
 
 ![knn](https://raw.github.com/earino/data_science_hw2/master/images/knn.png)
+
+BAYES:
+
 ![bayes](https://raw.github.com/earino/data_science_hw2/master/images/bayes.png)
+
+Conclusion: You'll note that the KNN fits better throughout the entire
+multidimensional space (it is a better fit at the edges of the
+prediction, particularly the top right.) Whereas it seems that the bayes
+over-generalizes too quickly.
